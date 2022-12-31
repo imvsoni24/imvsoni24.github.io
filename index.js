@@ -23,3 +23,13 @@ function openNav() {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+  function redirect(){
+    window.open("https://www.linkedin.com/in/vivek-soni-1269a2210/")
+  }
+  function redirect2(){
+    window.open("https://github.com/imvsoni24")
+  }
+  function a(){
+    window.open("https://wa.me/6386315908")
+    console.log("hello")
+  }

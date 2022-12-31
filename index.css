@@ -96,7 +96,7 @@ body{
     transform: rotate(0deg);
     transition: transform 0.5s;
     margin-left: -5px;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 28px;
     z-index: -1;
     padding: 5px 10px;
@@ -118,7 +118,7 @@ body{
     cursor: pointer;
     padding:5px 10px;
     height:29px;
-    font-size:20px;
+    font-size:18px;
     margin-top:28px
 }
 .sec:hover{
@@ -164,6 +164,111 @@ body{
     font-size: 36px;
     margin-left: 50px;
   }
+  .about{
+    display: flex;
+    margin-top: 20px;
+  }
+  .about1{
+    display: flex;
+    justify-content: space-around;
+  }
+  .imagediv{
+    width: 400px;
+  }
+  .myimage{
+    width: 100%;
+    border-radius: 50%;
+    margin-left: 40%;
+  }
+  .details{
+    margin-left: 120px;
+    /* margin-right: 90px; */
+  }
+  .icons{
+    margin-left: 33px;
+    margin-top: 150px;
+  }
+  .me{
+    color: white;
+    background-color: black;
+    font-size: 21px;
+    width: 55px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border-bottom-right-radius: 28px;
+  }
+  .name{
+    color: #58595b;
+    font-size: 48px;
+    margin-left: -20px;
+    margin-top: -10px;
+    font-family:Roboto,sans-serif
+  }
+  .surname{
+    color: #58595b;
+    font-family:Roboto,sans-serif;
+    font-size: 48px;
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+  .icons{
+    cursor: pointer;
+  }
+  .role{
+    color: #58595b;
+    font-family:Roboto,sans-serif;
+    margin-top: -20px;
+    font-size: 20px;
+    margin-left: -15px;
+  }
+  .des{
+    color: #58595b;
+    font-family:Roboto,sans-serif;
+    margin-left: -15px;
+    width: 400px;
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .maintalk{
+       width: 70px;
+       height: 70px;
+       border: 1px solid red;
+       border-radius: 50%;
+       color: white;
+       margin-top: 19px;
+       margin-left: 10px;
+       font-size: 20px;
+       padding: 5px 7px;
+       background-color: #e65446;
+  }
+  .border{
+    width: 110px;
+    height: 110px;
+    background-color: #f3877e;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-top: 45px;
+    cursor: pointer;
+    
+  }
+  .talkone{
+    margin-left: 15px;
+  }
+  .talktwo{
+    margin-left: 25px;
+  }
+  
+  /* .talk{
+    width: 100%;
+    height: 100%;
+    margin-left: 16px;
+  } */
+  .one{
+    margin-top: 10px;
+  }
+  .two{
+    margin-top: 10px;
+  }
 @media screen and (max-width: 1200px) {
     #app {
         width: 100%;
@@ -180,11 +285,67 @@ body{
       } 
   }
   @media screen and (max-width: 500px) {
-      .mail{
-        display: none;
-      }
+      
+      .imagediv{
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
+    }
   }
+  @media screen and (max-width: 380px) {
+    .imagediv{
+      width:200px;
+      margin: auto;
+      margin-top: 20px;
+  }
+  .mail{
+    display: none;
+  }
+}
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+  @media screen and (max-width: 1440px) {
+    .myimage{
+        margin-left: 0%;
+      }
+  }
+  @media screen and (max-width: 989px) {
+    .about{
+    flex-direction: column;
+    }
+    .icons{
+        display: none;
+    }
+    .icons2{
+        display: flex;
+
+    }
+    .details{
+        margin-left: 0px;
+    }
+    .des{
+        width: 70%;
+        margin: auto;
+        /* margin-left: 20px; */
+    }
+    .border{
+        margin: auto;
+    }
+    .me{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .role{
+        text-align: center;
+    }
+    .name,.surname,.me{
+        text-align: center;
+        
+    }
+    .imagediv{
+        margin: auto;
+        margin-top: 20px;
+    }
   }
