@@ -5,10 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/0365622707.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    Hello
     
+    <div id="app">
+        <div class="cursor"></div>
+        <div class="app2">
+            <div class="app3">
+            <div>
+              <img class='img' width="100px" src="https://i.ibb.co/Jp7475n/V.png" alt="logo" />
+            </div>
+            <div class='mail' >
+              <a  href="mailto:imvsoni24@gmail.com"><i class="fa-solid fa-envelope"></i> imvsoni24@gmail.com</a>
+            </div>
+            </div>
+            <div class="app4">
+              <div class='sec'><i class="fa-solid fa-house"></i> Home</div>
+              <div class='sec'><i class="fa-solid fa-address-card"></i> About Me</div>
+              <div class='sec'><i class="fa-solid fa-book"></i> Skills</div>
+              <div class='sec'><i class="fa-solid fa-file"></i> Projects</div>
+              <div class='sec'><i class="fa-solid fa-square-phone"></i> Contact</div>
+              <div onclick="myFunction()" class='sec'><i class="fa-solid fa-user"></i> Resume</div>
+            </div>
+            <div onclick="openNav()" class="app5">
+                <i  class="fa-solid fa-bars"></i>
+            </div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class='sec'><i class="fa-solid fa-house"></i> Home</div>
+              <div class='sec'><i class="fa-solid fa-address-card"></i> About Me</div>
+              <div class='sec'><i class="fa-solid fa-book"></i> Skills</div>
+              <div class='sec'><i class="fa-solid fa-file"></i> Projects</div>
+              <div class='sec'><i class="fa-solid fa-square-phone"></i> Contact</div>
+              <div onclick="myFunction()" class='sec'><i class="fa-solid fa-user"></i> Resume</div>
+              </div>
+          </div>
+    </div>
 </body>
 </html>
+<script src="index.js">
+</script>
