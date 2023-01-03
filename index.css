@@ -3,7 +3,8 @@ body{
     margin: 0;
     /* width: 100%; */
     height: 2000px;
-    /* background-color: hsl(23,72%,94%); */
+    /* background-color: var(--primary-color); */
+    font-family:Roboto,sans-serif;
   }
   .cursor {
     width: 40px;
@@ -67,24 +68,42 @@ body{
     border: 1px solid red;
     
 }
-
-
+:root{
+    --primary-color:hsl(23,72%,94%)
+}
+.dark-theme{
+    --primary-color:#0d1017;
+    color: #58595b;
+}
   #app {
     width: 80%;
     margin: auto;
     height: 1800px;
     margin-top: 70px;
-    background-color: hsl(23,72%,94%);
+    background-color: var(--primary-color);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     border-radius: 10px;
   }
-  .app2{
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 80%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  #app2{
     display:flex;
     justify-content:space-between;
+    overflow: hidden; 
+    background-color: var(--primary-color);
+    
 }
 .app3{
     display:flex;
     justify-content:space-between;
+    
 }
 .img{
     cursor: pointer;
@@ -189,10 +208,10 @@ body{
     margin-top: 150px;
   }
   .me{
-    color: white;
-    background-color: black;
+    color: #F2F0EE;
+    background-color: #2B2929;
     font-size: 21px;
-    width: 55px;
+    width: 70px;
     padding: 10px 10px;
     border-radius: 5px;
     border-bottom-right-radius: 28px;
@@ -249,7 +268,7 @@ body{
     margin-left: 40px;
     margin-top: 45px;
     cursor: pointer;
-    
+    font-family:Roboto,sans-serif;
   }
   .talkone{
     margin-left: 15px;
@@ -269,14 +288,18 @@ body{
   .two{
     margin-top: 10px;
   }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
     #app {
-        width: 100%;
-        margin-top: 0px;
+        /* width: 85%; */
+        /* margin-top: 0px; */
         height: 1950px;
         /* margin: auto; */
         border: none;
       }
+      /* .sticky{
+        width: 100%;
+      } */
+
       .app4{
         display: none;
     }
@@ -291,6 +314,9 @@ body{
         margin: auto;
         margin-top: 20px;
     }
+    .mail{
+        display: none;
+      }
   }
   @media screen and (max-width: 380px) {
     .imagediv{
@@ -298,20 +324,19 @@ body{
       margin: auto;
       margin-top: 20px;
   }
-  .mail{
-    display: none;
-  }
+  
 }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    
   }
   @media screen and (max-width: 1440px) {
     .myimage{
         margin-left: 0%;
       }
   }
-  @media screen and (max-width: 989px) {
+  @media screen and (max-width: 1130px) {
     .about{
     flex-direction: column;
     }
@@ -334,6 +359,7 @@ body{
         margin: auto;
     }
     .me{
+        width: 80px;
         margin: auto;
         margin-bottom: 20px;
     }
