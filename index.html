@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+
     <script src="https://kit.fontawesome.com/0365622707.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     
@@ -22,7 +24,7 @@
             </div>
             </div>
             <div  id="toggle" style="margin-top: 30px; cursor: pointer; color:rgb(97,106,115);font-size: 25px;">
-                <i class="fa-solid fa-circle-half-stroke"></i>
+                <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
             </div>
 
             <div class="app4">
@@ -71,9 +73,65 @@
             </div>
             <div  class="imagediv"><img id="myimg" class="myimage" src="https://i.ibb.co/PjnrNb1/My-project-1-2.png" alt=""></div>
           </div>
+          <!-- Github -->
+          <div class="calendar">
+        </div>
+          <!-- Contact section -->
+          <section id="section-wrapper">
+            <div class="box-wrapper">
+                <div class="form-wrap">
+                    <form  action="#" method="POST">
+                        <h2 class="form-title">Contact Me</h2>
+                        <div class="pm">
+                          <div onclick="phone()" id="phone2" class="phone2">
+                            <p><i class="fa-solid fa-phone"></i></p>
+                            <p>Phone</p>
+                            <p>+91-6386315908</p>
+                          </div>
+                          <div class="gitlin">
+                            <div onclick="redirect()" style="font-size:30px;margin-top: 20px;"><i class="fa-brands fa-linkedin"></i></div>
+                            <div onclick="redirect2()" style="font-size:30px;;margin-top: 10px"><i class="fa-brands fa-github"></i></div>
+                          </div>
+                          <div onclick="email()" id="gmail" class="gmail">
+                            <p><i class="fa-solid fa-envelope"></i></p>
+                            <p>Email</p>
+                            <p>imvsoni24@gmail.com</p>
+                          </div>
+                          
+                        </div>
+                    
+                        <div class="form-fields">
+                           <div>
+                            <div class="form-group">
+                              <input type="text" class="fname" placeholder="First Name">
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="lname" placeholder="Last Name">
+                          </div>
+                          <div class="form-group">
+                              <input type="email"  class="email" placeholder="Mail">
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="phone" placeholder="Phone">
+                          </div>
+                           </div>
+                            <div>
+                              <div  class="form-group">
+                                <textarea name="message" id="" placeholder="Write your message"></textarea>
+                            </div class="form-group">
+                            <div><input type="submit" value="Send Message" class="submit-button"></div>
+                            </div>
+                        </div>
+                       
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </div>
 </body>
 </html>
 <script src="index.js">
 </script>
+
 

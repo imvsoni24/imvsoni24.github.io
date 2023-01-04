@@ -58,5 +58,10 @@ function openNav() {
   }
   function a(){
     window.open("https://wa.me/6386315908")
-    console.log("hello")
+  }
+  function phone(){
+    window.open("tel:+91-6386315908")
+  }
+  function email(){
+    window.location.href=("mailto:imvsoni24@gmail.com")
   }

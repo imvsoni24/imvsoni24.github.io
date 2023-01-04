@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     /* width: 100%; */
-    height: 2000px;
+    height: 3000px;
     /* background-color: var(--primary-color); */
     font-family:Roboto,sans-serif;
   }
@@ -78,7 +78,7 @@ body{
   #app {
     width: 80%;
     margin: auto;
-    height: 1800px;
+    height: 2800px;
     margin-top: 70px;
     background-color: var(--primary-color);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -193,11 +193,13 @@ body{
   }
   .imagediv{
     width: 400px;
+    
   }
   .myimage{
-    width: 100%;
+    width: 95%;
     border-radius: 50%;
     margin-left: 40%;
+    border: 10px solid rgba(14, 30, 37, 0.12)
   }
   .details{
     margin-left: 120px;
@@ -206,6 +208,7 @@ body{
   .icons{
     margin-left: 33px;
     margin-top: 150px;
+    color: rgb(97,106,115);
   }
   .me{
     color: #F2F0EE;
@@ -288,11 +291,149 @@ body{
   .two{
     margin-top: 10px;
   }
+
+/* contact section */
+
+#section-wrapper{
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+}
+.box-wrapper{
+  /* position: relative; */
+  /* display: table; */
+  width:100%;
+  margin:auto;
+  margin-top:35px;
+  border-radius: 30px;
+}
+/* .icon{
+  margin-top: 40px;
+  text-align: center;
+
+} */
+.pm{
+  display: flex;
+  width: 95%;
+  margin: auto;
+  margin-top: 50px;
+
+  text-align: center;
+  color: rgb(97,106,115);
+  justify-content: space-between;
+}
+.phone2{
+  width: 30%;
+  /* margin-left: 25px; */
+  cursor: pointer;
+  background: hsl(23,72%,94%);
+  /* padding-right: 12px;
+  padding-left: 12px; */
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+
+}.gitlin{
+  width: 30%;
+  /* margin-left: 25px; */
+  cursor: pointer;
+  background: hsl(23,72%,94%);
+  /* padding-right: 12px;
+  padding-left: 12px; */
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+.gmail{
+  width: 30%;
+  cursor: pointer;
+  /* padding-right: 12px; */
+  /* padding-left: 12px; */
+  background: hsl(23,72%,94%);
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+
+}
+
+.form-wrap{
+  padding:40px 25px 35px 25px;
+  border-radius: 0px 30px 30px 0px;
+  background: hsl(23,72%,94%);
+}
+.form-title{
+  text-align: center;
+  margin-left: 23px;
+  font-size: 38px;
+  letter-spacing: 0.5px;
+  color: rgb(97,106,115);
+  /* width: 300px; */
+  margin: auto;
+    /* transform: rotate(0deg); */
+    transition: transform 0.5s;
+}
+/* .form-title:hover{
+  width: 300px;
+  transform: rotate(-7deg); 
+  color: white;
+  background-color: rgb(230,85,71);
+  border-radius: 10px;
+} */
+.form-fields{
+  display: flex;
+  justify-content: space-between;
+   /* width: 100%; */
+  padding: 15px 7px 5px 7px;
+  margin-top: 50px;
+  
+}
+.form-fields input,
+.form-fields textarea{
+  border: none;
+  outline:none;
+  background: none;
+  font-size: 18px;
+  /* color:#555; */
+  padding: 20px 10px 20px 5px;
+  width:100%;
+}
+.form-fields textarea{
+  height: 150px;
+  resize: none;
+}
+.form-group{
+  width: 75%;
+  padding: 0px 46px;
+  margin: 14px 12px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+/* .form-fields .form-group:last-child {
+  width: 56%;
+} */
+.submit-button{
+  width: 70%;
+  margin: auto;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 10px;
+  border-radius: 30px;
+  font-size: 20px;;
+  font-weight: 700;
+  outline: none;
+  border:none;
+  cursor: pointer;
+  color: rgb(97,106,115);
+  text-align: center;
+  background: #F44770;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  transition: .5s;
+}
+.submit-button:hover{
+  background: rgb(230,85,71);
+  color: white;
+}
+/* Responsive css */
+
 @media screen and (max-width: 1250px) {
     #app {
-        /* width: 85%; */
-        /* margin-top: 0px; */
-        height: 1950px;
+        
+        margin-top: 0px;
+        height: 3000px;
         /* margin: auto; */
         border: none;
       }
@@ -306,8 +447,18 @@ body{
       .app5{
         display: block;
       } 
+      /* .form-fields{
+        flex-direction: column;
+      } */
+      .form-group{
+        width: 65%;
+        /* margin-left: 60px; */
+      }
+      /* .submit-button{
+        width: 60%;
+      } */
   }
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 539px) {
       
       .imagediv{
         width: 300px;
@@ -318,22 +469,92 @@ body{
         display: none;
       }
   }
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 350px) {
+      #app{
+        width: 100%;
+      }
+    #app2{
+      width: 100%;
+    }
+    .pm{
+      width: 100%;
+      margin: auto;
+    }
+    .gmail{
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: -50px;
+      font-size: 13px;
+    }
+}
+  @media screen and (max-width: 430px) {
     .imagediv{
-      width:200px;
+      width:180px;
       margin: auto;
       margin-top: 20px;
   }
+  .role{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .form-title{
+    font-size: 21px;
+  }
+  .gmail{
+   
+    font-size: 12px;
+  }
   
+}
+@media screen and (max-width: 1100px) {
+ .form-fields{
+        flex-direction: column;
+      }
+      .submit-button{
+        width: 40px;
+      }
+      .form-group{
+        margin: auto;
+        margin-top: 30px;
+        /* margin-left: 75px; */
+      }
+
 }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
     
   }
+  @media screen and (max-height: 1000px) {
+    .pm{
+      font-size: 14px;
+    }
+  }
   @media screen and (max-width: 1440px) {
     .myimage{
         margin-left: 0%;
+      }
+  }
+  @media screen and (max-width: 900px) {
+    .pm{
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+      }
+      .phone2{
+        width: 100%;
+        margin-top: 20px;
+      }
+      .gitlin{
+        width: 100%;
+        margin-top: 20px;
+      }
+      .gmail{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: -50px;
       }
   }
   @media screen and (max-width: 1130px) {
