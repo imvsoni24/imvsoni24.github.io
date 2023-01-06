@@ -427,6 +427,97 @@ body{
   background: rgb(230,85,71);
   color: white;
 }
+/* ///////////////////// */
+
+.p1{
+  display: flex;
+  /* justify-content: space-between; */
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 35px;
+  background: hsl(23,72%,94%);
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px #ffffff;
+
+}
+.p1>div:nth-child(1){
+  width: 55%;
+  margin: auto;
+  padding:15px;
+  /* border: 1px solid red; */
+}
+.p1>div:nth-child(2){
+  width: 45%;
+  margin: auto;
+  padding: 15px;}
+.imggg{
+  width: 100%;
+  height: 300px;
+  border-radius: 40px;
+  margin-top: 10px;
+  transition: transform .2s;
+  border: 10px solid rgba(14, 30, 37, 0.12)
+}
+
+.p1>div>p{
+  color: rgb(97,106,115);
+  font-family: D-DIN Condensed,sans-serif;
+ text-align: center;
+ margin-top: 10px;
+}
+.p1h1{
+  color: rgb(97,106,115);
+  /* text-align: center; */
+  /* font-size: 30px; */
+  margin-top:-50px;
+}
+.gh{
+  text-align: left;margin-top:-18px;
+}
+.p1a{
+  color: rgb(97,106,115);
+  font-size: 14px;
+  margin-top: -10px;
+  text-decoration: underline;
+  text-align: center;
+}
+/* .btn {
+  background-color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .btn--left {
+  left: 10;
+  top: 100%;
+  transform: translate(-50%, -50%);
+} */
+
+/* .btn--right {
+  top: 100%;
+  right: 0;
+  transform: translate(50%, -50%);
+} */
+
+/* .btn-icon {
+  height: 22px;
+  width: 22px;
+  stroke: #087f5b;
+}
+
+.btn:hover,
+.btn:active {
+  background-color:#e65446;
+} */
+
 /* Responsive css */
 
 @media screen and (max-width: 1250px) {
@@ -459,7 +550,12 @@ body{
       } */
   }
   @media screen and (max-width: 539px) {
-      
+    #app{
+      width: 100%;
+    }
+    #app2{
+      width: 100%;
+    }
       .imagediv{
         width: 300px;
         margin: auto;
@@ -469,9 +565,17 @@ body{
         display: none;
       }
   }
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 356px) {
       #app{
         width: 100%;
+      }
+      .p1>div>p{
+        font-size: 10px;
+      }
+      .p1a{
+        font-size: 1px;
+        width: 100%;
+        margin: auto;
       }
     #app2{
       width: 100%;
@@ -493,6 +597,12 @@ body{
       margin: auto;
       margin-top: 20px;
   }
+  .p1h1{
+    font-size: 22px;
+  }
+  .p1a{
+    font-size: 10px;
+  }
   .role{
     width: 100%;
     margin: auto;
@@ -508,12 +618,15 @@ body{
   }
   
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1135px) {
  .form-fields{
         flex-direction: column;
       }
       .submit-button{
         width: 40px;
+      }
+      .p1{
+        width: 80%;
       }
       .form-group{
         margin: auto;
@@ -527,10 +640,34 @@ body{
     .sidenav a {font-size: 18px;}
     
   }
-  @media screen and (max-height: 1000px) {
+  @media screen and (max-width: 1000px) {
     .pm{
       font-size: 14px;
     }
+    .p1{
+      flex-direction: column;
+    }
+    .p1>div:nth-child(1){
+      width: 90%;
+      margin: auto;
+      padding:15px;
+      text-align: center;
+    }
+    .p1>div:nth-child(2){
+      width: 80%;
+      margin: auto;
+      /* padding: 15px; */
+    text-align: center;
+    margin-top: 10px;
+  }.p1>div>p{
+    margin-top: 10px;
+  }
+  .visit>a{
+    margin: auto;
+    /* justify-content: center; */
+    /* border: 1px solid red; */
+  }
+
   }
   @media screen and (max-width: 1440px) {
     .myimage{
