@@ -1,166 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head >
+    <meta charset="utf-8">
+   <title>Responsive Navigation Menu</title>
     <link rel="stylesheet" href="index.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+   rel="stylesheet"
+   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
     <script src="https://kit.fontawesome.com/0365622707.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
-    
-    <div id="app">
-        <!-- <div class="cursor"></div> -->
-        <div id="app2">
-            <div class="app3">
-            <div>
-              <img id="logo" class='img' width="100px" src="https://i.ibb.co/T0CWy8h/V.gif" alt="logo" />
-            </div>
-            <div class='mail' >
-              <a  href="mailto:imvsoni24@gmail.com"><i class="fa-solid fa-envelope"></i> imvsoni24@gmail.com</a>
-            </div>
-            </div>
-            <div  id="toggle" style="margin-top: 30px; cursor: pointer; color:rgb(97,106,115);font-size: 25px;">
-                <!-- <i class="fa-solid fa-circle-half-stroke"></i> -->
-            </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
-            <div class="app4">
-              <div class='sec'><i class="fa-solid fa-house"></i> Home</div>
-              <div class='sec'><i class="fa-solid fa-address-card"></i> About Me</div>
-              <div class='sec'><i class="fa-solid fa-book"></i> Skills</div>
-              <div class='sec'><i class="fa-solid fa-file"></i> Projects</div>
-              <div class='sec'><i class="fa-solid fa-square-phone"></i> Contact</div>
-              <div onclick="my()" class='sec'><i class="fa-solid fa-user"></i> Resume</div>
+   
+  </head>
+  <body >
+<!-- Cursor -->
+    <div >
+        <div id="Home" class="cursor">.</div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <div class='mail' id="mail" >
+        <a onclick="email()"  href="mailto:imvsoni24@gmail.com"><i class="fa-solid fa-envelope"></i> imvsoni24@gmail.com</a>
+      </div>
+      <div class="navbar_toggle" id="toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul  class="main_nav">
+        <li>
+          <a href="#Home"  class="nav_links">Home</a>
+        </li>
+        <li>
+          <a href="#Home" class="nav_links">About</a>
+        </li>
+        <li>
+          <a href="#Skills" class="nav_links">Skills</a>
+        </li>
+        <li >
+          <a href="#Projects" class="nav_links">Projects</a>
+        </li>
+        <li>
+          <a href="#Contact" class="nav_links">Contact</a>
+        </li>
+        <li>
+          <a onclick="redirect()" href="#" class="nav_links">Resume</a>
+        </li>
+      </ul>
+      
+        
+    </nav>
+
+     <!-- about -->
+ <!-- home section start -->
+    <section class="home" >
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hey, It's me</div>
+                <div class="text-2">Vivek Soni</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a onclick="w()" href="#">Let's Talk</a>
             </div>
-            <div onclick="openNav()" class="app5">
-                <i  class="fa-solid fa-bars"></i>
-            </div>
-            <div id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <div class='sec'><i class="fa-solid fa-house"></i> Home</div>
-              <div class='sec'><i class="fa-solid fa-address-card"></i> About Me</div>
-              <div class='sec'><i class="fa-solid fa-book"></i> Skills</div>
-              <div class='sec'><i class="fa-solid fa-file"></i> Projects</div>
-              <div class='sec'><i class="fa-solid fa-square-phone"></i> Contact</div>
-              <div onclick="myFunction()" class='sec'><i class="fa-solid fa-user"></i> Resume</div>
-              <div class="icons2">
-                <div onclick="redirect()" style="font-size:25px;margin-top: 20px;"><i class="fa-brands fa-linkedin"></i> Linkedin</div>
-                <div onclick="redirect2()" style="font-size:25px;;margin-top: 40px"><i class="fa-brands fa-github"></i> GitHub</div>
-            </div>
-              </div>
-          </div>
-          <!-- About me -->
-          <div class="about">
-            <div class="about1">
-                <div class="icons">
-                    <div onclick="redirect()" style="font-size:40px;margin-top: 10px;"><i class="fa-brands fa-linkedin"></i></div>
-                    <div onclick="redirect2()" style="font-size:40px;;margin-top: 10px"><i class="fa-brands fa-github"></i></div>
-                </div>
-                <div class="details">
-                    <p  class="me">it's me</p>
-                    <h1 class="name">Vivek</h1>
-                    <h1 class="surname">Soni</h1>
-                    <h2 class="role">Full Stack Web Developer</h2>
-                    <p class="des">A Full Stack Web developer trained by Masai School.
-                    I have a passion to create useful projects and system
-                    can contribute in everyone's wellbeing. I go to full extent in execution.</p>
-                    <div onclick="a()"  class="border"><div  class="maintalk"><span class="talkone">let's</span><br>
-                        <span class="talktwo">talk</span></div></div>
-                </div>
-            </div>
-            <div  class="imagediv"><img id="myimg" class="myimage" src="https://i.ibb.co/PjnrNb1/My-project-1-2.png" alt=""></div>
-          </div>
-          <!-- Projects -->
-          <div class="p1">
-            <div>
-              <div class="carousel-container">
-                <div class="carousel-box">
-                  <div class="carousel">
-                    <img class="imggg" src="https://i.ibb.co/hLF5JGG/Screenshot-26.png" alt="">
-                  </div>
-                </div>
-                <div class="carousel-box">
-                  <div class="carousel">
-                    <img class="imggg" src="https://i.ibb.co/mcNJCQL/Screenshot-27.png" alt="">
-                  </div>
-                </div>
-                <div class="carousel-box">
-                  <div class="carousel">
-                    <img class="imggg"
-                      src="https://i.ibb.co/CtBqLpd/Screenshot-28.png"
-                      alt="Foto-3" />
-                  </div>
-                </div>
-                <div class="carousel-box">
-                  <div class="carousel">
-                    <img class="imggg"
-                      src="https://i.ibb.co/yhf1zNw/Screenshot-29.png"
-                      alt="Foto-3" />
-                  </div>
-                </div>
-                <div class="carousel-box">
-                  <div class="carousel">
-                    <img class="imggg"
-                      src="https://i.ibb.co/KwgGM23/Screenshot-30.png"
-                      alt="Foto-3" />
-                  </div>
-                </div>
           
-                <!-- <button class="btn btn--left" onclick="plusSlides(-1)">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="btn-icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-                <button class="btn btn--right" onclick="plusSlides(1)">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="btn-icon"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7" />
-                  </svg>
-                </button> -->
-              </div>
-            <p>REACT JS, CHAKRA UI, FIREBASE</p>
-            </div>
-            <div class="de">
-              <h1 class="p1h1">Modesens Clone</h1>
-              <div class="visit" style="display: flex;font-weight: 800;"><a class="p1a" target="_blank" href="https://becharmed.netlify.app/">VISIT THE WEBSITE</a>
-                <a class="gh"  target="_blank" href="https://github.com/imvsoni24/fit-base-1108"><i class="fa-brands fa-github"></i></a></div>
-              <p style="text-align: justify;line-height: 1.4;margin-top: 10px;" class="descr">ModeSens is your free, digital shopping assistant helping you shop from 12,000+ premium brands and 500+ store partners like Gucci, Fendi, Net-A-Porter, Farfetch, Nordstrom, Saks Fifth Avenue, Burberry, Louis Vuitton, Balenciaga, Dior, and many more.</p>
-             
-            </div>
-          </div>
-          <!-- Github -->
-          <!-- <div class="calendar">
-            <img src="https://github-readme-stats.vercel.app/api?username=imvsoni24&show_icons=true&bg_color=00000000&color=red" alt="">
         </div>
-        <div>
-          <img src="http://github-readme-streak-stats.herokuapp.com?user=imvsoni24&theme=dark&background=hsl(23,72%,94%))](https://git.io/streak-stats" alt="">
+        <div class= "min-width" >
+          <img width="400px" height="400px" src="https://i.ibb.co/2gbYNQr/My-project-1-3.png" alt="">
+      </div>
+    </section>
+
+
+
+         <!-- skills -->
+     <!-- skills -->
+<div id="Skills" class="skill-section">
+  <h1 class="heading">skills</h1>
+  <div class="skills-container">
+      <div class="skill-card">
+          <img src="https://www.wallpapertip.com/wmimgs/83-837949_html-logo-black-background.jpg" class="skill-img" alt="">
+          <div class="skill-level">98%</div>
+          <h1 class="skill-name">HTML</h1>
+      </div>
+      <div class="skill-card">
+        <img src="https://as2.ftcdn.net/v2/jpg/04/36/64/25/1000_F_436642569_KE7mXljaADhdI1eKrENOJ9HGT2cFrWq2.jpg" class="skill-img" alt="">
+        <div class="skill-level">98%</div>
+        <h1 class="skill-name">CSS</h1>
+    </div>
+    <div class="skill-card">
+      <img src="https://w0.peakpx.com/wallpaper/583/455/HD-wallpaper-javascript-bts-coding-kod-kodlama-code-phone-lock-logo-locked.jpg" class="skill-img" alt="">
+      <div class="skill-level">95%</div>
+      <h1 class="skill-name">JavaScript</h1>
+  </div>
+  <div class="skill-card">
+    <img src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg" class="skill-img" alt="">
+    <div class="skill-level">90%</div>
+    <h1 class="skill-name">React JS</h1>
+</div>
+<div class="skill-card">
+  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--KkP4AuFt--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ql92zpsre2li58mpjpsa.png" class="skill-img" alt="">
+  <div class="skill-level">90%</div>
+  <h1 class="skill-name">Next JS</h1>
+</div>
+<div class="skill-card">
+  <img src="https://p4.wallpaperbetter.com/wallpaper/45/875/629/technology-node-js-wallpaper-preview.jpg" class="skill-img" alt="">
+  <div class="skill-level">90%</div>
+  <h1 class="skill-name">Node JS</h1>
+</div>
+<div class="skill-card">
+  <img src="https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1644403814/hevo-learn/springboot_MongoDB_configuration_mongodb.jpg?_i=AA" class="skill-img" alt="">
+  <div class="skill-level">90%</div>
+  <h1 class="skill-name">Mongo DB</h1>
+</div>
+<div class="skill-card">
+  <img src="https://miro.medium.com/max/805/0*m1VOQP0FtcQufLgw.png" class="skill-img" alt="">
+  <div class="skill-level">90%</div>
+  <h1 class="skill-name">Express JS</h1>
+</div>
+<div class="skill-card">
+  <img src="https://tailwindcss.com/_next/static/media/tailwindui-small@75.8bb955b2.jpg" class="skill-img" alt="">
+  <div class="skill-level">90%</div>
+  <h1 class="skill-name">Tailwind CSS</h1>
+</div>
+      
+  </div>
+</div>
+
+<!-- Tools -->
+<div class="skill-section">
+  <h1 class="heading">Tools</h1>
+  <div class="skills-container">
+      <div class="skill-card">
+          <img src="https://repository-images.githubusercontent.com/124369770/d12e6800-b47a-11e9-85a3-5fe53e198d49" class="skill-img" alt="">
+          <div class="skill-level">90%</div>
+          <h1 class="skill-name">GitHub</h1>
+      </div>
+      <div class="skill-card">
+        <img src="https://c4.wallpaperflare.com/wallpaper/783/165/261/technology-visual-studio-code-hd-wallpaper-thumb.jpg" class="skill-img" alt="">
+        <div class="skill-level">90%</div>
+        <h1 class="skill-name">Vs Code</h1>
+    </div>
+    <div class="skill-card">
+      <img src="https://blog.replit.com/images/new_logo/logotype.png?v=1664916455431" class="skill-img" alt="">
+      <div class="skill-level">90%</div>
+      <h1 class="skill-name">Replit</h1>
+  </div>
+
+      
+  </div>
+</div>
+
+
+    <!-- projects -->
+
+    <h1 id="Projects" class="heading1">Here are some of my works.</h1>
+    <div class="project-card">
+      <div  class="first">
+        <div class="imgdiv"><img src="https://i.ibb.co/hLF5JGG/Screenshot-26.png" alt=""></div>
+        <div class="carddetails">
+          <h1 style="text-align: center;font-size: 40px;margin-top: 2px;color: white;">Modesens Clone</h1>
+          <div style="display: flex;justify-content: space-evenly;margin-top: -30px;"><a onclick="mode1()" class="visit">VISIT THE WEBSITE</a>
+            <p onclick="mode2()" ><i style="font-size: 30px;cursor: pointer;;margin-top: -40px;color: grey;" class="fa-brands fa-github"></i></p></div>
+            <h4 class="tech" style="text-align: center;font-size: 15px;">HTML,CSS,JavaScript,React JS, Chakra UI</h2>
+            <p class="tech2" >ModeSens is your free, digital shopping assistant helping you shop from 12,000+ premium brands and 500+ store partners like Gucci, Fendi, Net-A-Porter, Farfetch, Nordstrom, Saks Fifth Avenue, Burberry, Louis Vuitton, Balenciaga, Dior, and many more.</p>
+          
         </div>
-        <div>
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=imvsoni24&layout=compact&theme=vision-friendly-dark)](https://github.com/imvsoni24/github-readme-stats" alt="">
-        </div> -->
-          <!-- Contact section -->
-          <section id="section-wrapper">
-            <div class="box-wrapper">
+      </div>
+    </div>
+    <div class="project-card">
+      <div  class="first">
+        <div class="imgdiv"><img src="https://i.ibb.co/KqWRP5R/Screenshot-32.png" alt=""></div>
+        <div class="carddetails">
+          <h1 style="text-align: center;font-size: 40px;margin-top: 2px;color: white;">BeautyBebo Clone</h1>
+          <div style="display: flex;justify-content: space-evenly;margin-top: -30px;"><a onclick="bebo1()" class="visit">VISIT THE WEBSITE</a>
+            <p onclick="bebo2()" ><i style="font-size: 30px;margin-top: -40px;color: grey;cursor: pointer;" class="fa-brands fa-github"></i></p></div>
+            <h4 class="tech" style="text-align: center;"">HTML,CSS,JavaScript</h2>
+            <p class="tech2" >This is a group project built by 5 member team. Beauty Bebo is India’s fastest growing online retail store for the day to day and special occasion need of the Makeup, Skin care, Hair care, Personal care, Mom and Baby care, Fragrance and Ayurveda products.</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div  class="first">
+        <div class="imgdiv"><img src="https://i.ibb.co/y6Qz0mx/Screenshot-31.png" alt=""></div>
+        <div class="carddetails">
+          <h1 style="text-align: center;font-size: 40px;margin-top: 2px;color: white;">Booking.com Clone</h1>
+          <div style="display: flex;justify-content: space-evenly;margin-top: -30px;"><a onclick="book1()" class="visit">VISIT THE WEBSITE</a>
+            <p onclick="book2()" ><i style="font-size: 30px;margin-top: -40px;color: grey;cursor: pointer;" class="fa-brands fa-github"></i></p></div>
+            <h4 class="tech" style="text-align: center;"">HTML,CSS,JavaScript</h2>
+            <p class="tech2" >Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip on any budget..</p>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+<!-- github -->
+<h1 class="heading">My Github Statistics</h1>
+<div style="width: 60%;margin: auto;">
+  <img width="100%" src="https://github-readme-stats.vercel.app/api?username=imvsoni24&show_icons=true&theme=radical" alt="">
+</div>
+<div style="width: 60%;margin: auto;margin-top: 30px;">
+  <img width="100%"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&langs_count=4&theme=radical" alt="">
+</div>
+<h1 class="heading">My Github Calender</h1>
+<div style="width: 60%;margin: auto;color: white;height: 300px;padding-top: 50px;font-size: 40px;" class="calendar">
+</div>
+
+
+
+<!-- contact -->
+
+         <section id="section-wrapper">
+            <div id="Contact" class="box-wrapper">
                 <div class="form-wrap">
                     <form  action="#" method="POST">
                         <h2 class="form-title">Contact Me</h2>
@@ -171,8 +224,8 @@
                             <p>+91-6386315908</p>
                           </div>
                           <div class="gitlin">
-                            <div onclick="redirect()" style="font-size:30px;margin-top: 20px;"><i class="fa-brands fa-linkedin"></i></div>
-                            <div onclick="redirect2()" style="font-size:30px;;margin-top: 10px"><i class="fa-brands fa-github"></i></div>
+                            <div onclick="redirect()" style="font-size:50px;margin-top: 20px;"><i class="fa-brands fa-linkedin"></i></div>
+                            <div onclick="redirect2()" style="font-size:50px;;margin-top: 20px"><i class="fa-brands fa-github"></i></div>
                           </div>
                           <div onclick="email()" id="gmail" class="gmail">
                             <p><i class="fa-solid fa-envelope"></i></p>
@@ -201,7 +254,7 @@
                               <div  class="form-group">
                                 <textarea name="message" id="" placeholder="Write your message"></textarea>
                             </div class="form-group">
-                            <div><input type="submit" value="Send Message" class="submit-button"></div>
+                            <div><input style="color: rgb(97,106,115);" type="submit" value="Send Message" class="submit-button"></div>
                             </div>
                         </div>
                        
@@ -210,10 +263,21 @@
             </div>
         </section>
 
-    </div>
-</body>
+    
+
+  </body>
 </html>
-<script src="index.js">
+<script src="index.js"></script>
+<script
+src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
+<script>
+  GitHubCalendar(".calendar", "imvsoni24", { responsive: true });
 
-
+  // Use a proxy
+  GitHubCalendar(".calendar", "imvsoni24", {
+     proxy (imvsoni24) {
+       return fetch(`https://your-proxy.com/github?user=${imvsoni24}`)
+     }
+  }).then(r => r.text())
+</script>

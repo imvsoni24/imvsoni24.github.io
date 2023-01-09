@@ -1,54 +1,38 @@
-let icon = document.getElementById("toggle")
-let img = document.getElementById("myimg");
-let logo = document.getElementById("logo");
-icon.onclick=function(){
-    document.body.classList.toggle("dark-theme")
-    if(document.body.classList.contains("dark-theme")){
-     img.src="https://i.ibb.co/2gbYNQr/My-project-1-3.png"
-     logo.src="https://i.ibb.co/9GQDmPW/V-1.gif"
-    }else{
-        img.src = "https://i.ibb.co/PjnrNb1/My-project-1-2.png"
-        logo.src = "https://i.ibb.co/T0CWy8h/V.gif"
-    }
-}
 
+const cursor = document.querySelector(".cursor");
+window.onmousemove = (e) => {
+  cursor.setAttribute("style", `top: ${e.pageY}px; left: ${e.pageX}px;`);
+};
 
-window.onscroll = function() {myFunction()};
+const navToggle = document.querySelector(".navbar_toggle");
+const links = document.querySelector(".main_nav");
+const mail = document.getElementById("mail");
+const navbar = document.getElementById("navbar");
 
-var navbar = document.getElementById("app2");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-function my(){
-        window.location.href = "https://drive.google.com/uc?id=1Is4NFOIM0cyZHtIuye69FauFuGpzn48X&export=download",
-        window.open("https://drive.google.com/file/d/1Is4NFOIM0cyZHtIuye69FauFuGpzn48X/view?usp=share_link")
-}
-const cursor = document.querySelector('.cursor');
-
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+navToggle.addEventListener('click', function(){
+    links.classList.toggle("show_nav");
 })
 
-document.addEventListener('click', () => {
-    cursor.classList.add("expand");
 
-    setTimeout(() => {
-        cursor.classList.remove("expand");
-    }, 500)
-})
+ var typed = new Typed(".typing", {
+    strings: ["Full Stack Web Developer trained by Masai School."],
+    typeSpeed: 50,
+    backSpeed: 60,
+    loop: true
+});
 
-function openNav() {
-    document.getElementById("mySidenav").style.width = "320px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+// var typed = new Typed(".typing-2", {
+//     strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+//     typeSpeed: 100,
+//     backSpeed: 60,
+//     loop: true
+// });
+function redirect(){
+    window.location.href = "https://drive.google.com/uc?id=1Is4NFOIM0cyZHtIuye69FauFuGpzn48X&export=download",
+    window.open("https://drive.google.com/file/d/1Is4NFOIM0cyZHtIuye69FauFuGpzn48X/view?usp=share_link")
+}
+function w(){
+    window.open("https://wa.me/6386315908")
   }
   function redirect(){
     window.open("https://www.linkedin.com/in/vivek-soni-1269a2210/")
@@ -56,44 +40,33 @@ function openNav() {
   function redirect2(){
     window.open("https://github.com/imvsoni24")
   }
-  function a(){
-    window.open("https://wa.me/6386315908")
-  }
   function phone(){
     window.open("tel:+91-6386315908")
   }
   function email(){
     window.location.href=("mailto:imvsoni24@gmail.com")
   }
-  var slidePosition = 1;
-SlideShow(slidePosition);
-
-// forward/Back controls
-function plusSlides(n) {
-  SlideShow((slidePosition += n));
+  function mode1(){
+    window.open("https://becharmed.netlify.app/")
+  
+  }
+  function mode2(){
+    window.open("https://github.com/imvsoni24/fit-base-1108")
+  }
+function bebo1(){
+  window.open("https://master--iridescent-gingersnap-92932a.netlify.app/index.html")
+}
+function bebo2(){
+  window.open("https://github.com/Harit2002/-puny-corn-6420")
+}
+function book1(){
+  window.open("https://jazzy-bienenstitch-1a091a.netlify.app/")
+}
+function book2(){
+  window.open("https://github.com/imvsoni24/elastic-afterthought-7316")
 }
 
-//  images controls
-function currentSlide(n) {
-  SlideShow((slidePosition = n));
-}
+// GitHubCalendar(".calendar", "your-username");
 
-function SlideShow(n) {
-  var i;
-  var slides = document.getElementsByClassName("carousel-box");
-  var circles = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slidePosition = 1;
-  }
-  if (n < 1) {
-    slidePosition = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < circles.length; i++) {
-    circles[i].className = circles[i].className.replace(" dot--fill", "");
-  }
-  slides[slidePosition - 1].style.display = "block";
-  circles[slidePosition - 1].className += " dot--fill";
-}
+    // or enable responsive functionality:
+   
