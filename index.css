@@ -70,7 +70,7 @@ body {
     /* home section styling */
 .home{
     display: flex;
-    width: 65%;
+    width: 70%;
     margin: auto;
     margin-left: 20%;
     color: #fff;
@@ -83,55 +83,91 @@ body {
    
 }
 .min-width>img{
+  /* width: 80%; */
+  /* margin: auto; */
     border-radius: 50%;
     border: 3px solid teal;
-    /* animation: mymove 2s infinite; */
 }
 /* 
 @keyframes mymove {
   from {border: 3px solid teal;}
   to {border: 3px solid white;}
 } */
-@media (max-width: 1125px) {
+@media (max-width: 1000px) {
     .home{
         flex-direction: column;
     }
     .min-width{
-       
-        width: 100%;
-        margin: auto;
-        margin-top: 30px;
+       /* position: relative; */
+      width: 100%;
+      margin: auto;
+        margin-top: 50px;
        
     }
     .min-width>img{
-      width:60%;
+      width: 100%; 
       margin: auto;
     }
 }
-@media (max-width: 500px) {
-    .home .home-content .text-2{
-        font-size: 50px;
-    }
-    .home .home-content .text-3{
-        font-size: 27px;
-    }
-}
-@media (max-width: 690px) {
-    .max-width{
-        padding: 0 23px;
-    }
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
-    }
+ /* @media (max-width: 740px) {
+  .min-width{   
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
    
 }
-@media (max-width: 947px){
+} */
+/* @media (max-width: 700px) {
+    
+  .min-width{   
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-right: 50px;
+   
+}
+} */
+/* @media (max-width: 600px) {
+    
+  .min-width{   
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-right: 100px;
+   
+}
+} */
+/* @media (max-width: 500px) {
+    
+  .min-width{   
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-right: 100px;
+   
+}
+} */
+/* @media (max-width: 400px) {
+    
+  .min-width{   
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-right: 100px;
+   
+}
+} */
+/* @media (max-width: 340px) {
+    
+  .min-width{   
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-right: 100px;
+   
+}
+} */
+/* @media (max-width: 947px){
    
     .home .home-content .text-2{
         font-size: 70px;
@@ -146,8 +182,8 @@ body {
     .max-width{
         max-width: 930px;
     }
-}
-@media (max-width: 991px) {
+} */
+/* @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
     }
@@ -156,7 +192,7 @@ body {
         font-size: 40px;
         margin: auto;
     }
-}
+} */
 .home .max-width{
   /* width: 100%; */
   display: flex;
@@ -224,6 +260,106 @@ body {
     padding: 1rem 2rem;
     position: relative;
 }
+.modeclone{
+  text-align: center;font-size: 40px;margin-top: 2px;color: white;
+}
+/* .tech{
+  
+  font-size: 15px;
+  margin: auto;
+} */
+.tech{
+  writing-mode: rl-tb;
+  font-family: "D-DIN Condensed", sans-serif;
+  font-size: 25px;
+  letter-spacing: 0.12em;
+  color: rgb(139, 139, 139);
+  text-align: center;
+  margin-top: -5px;
+}
+.tech2{
+  writing-mode: rl-tb;
+  font-family: "D-DIN Condensed", sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.10em;
+  color: rgb(139, 139, 139);
+  text-align: justify;
+}
+.demo{
+  display: flex;justify-content: space-evenly;margin-top: -30px;
+}
+@media only screen and (max-width : 1330px){
+  .project-card{
+    width: 60%;
+    margin: 5rem auto;
+  }
+  /* .tech{
+    font-size: 0.5rem;
+  } */
+}
+@media only screen and (max-width : 865px){
+  .project-card{
+    width: 80%;
+    margin: 5rem auto;
+  }
+  .tech{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width : 573px){
+  .project-card{
+    width: 100%;
+    margin: 5rem auto;
+  }
+  .tech{
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+  }
+  .heading1{
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width : 462px){
+  .project-card{
+    width: 100%;
+    margin: 5rem auto;
+  }
+  .tech{
+    font-size: 18px;
+  }
+  
+  .modeclone{
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width : 410px){
+  .project-card{
+    width: 100%;
+    margin: 5rem auto;
+  }
+  .demo{
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+  text-align: center;
+  }
+  .heading1{
+    font-size: 22px;
+  }
+  .tech{
+    font-size: 12px;
+  }
+  
+  .modeclone{
+    font-size: 22px;
+  }
+}
+
 .first{
     border-radius: 4rem;
 }
@@ -247,21 +383,7 @@ body {
     color: rgb(107, 151, 150);
     cursor: pointer;
 }
-.tech{
-    writing-mode: rl-tb;
-    font-family: "D-DIN Condensed", sans-serif;
-    font-size: 1.3rem;
-    letter-spacing: 0.19em;
-    color: rgb(139, 139, 139);
-}
-.tech2{
-    writing-mode: rl-tb;
-    font-family: "D-DIN Condensed", sans-serif;
-    font-size: 1.1rem;
-    letter-spacing: 0.10em;
-    color: rgb(139, 139, 139);
-    text-align: justify;
-}
+
 
 
 
@@ -273,7 +395,7 @@ body {
 
     }
     
-    .heading{
+    .skillheading{
         text-align: center;
         font-size: 60px;
         color: #fff;
@@ -303,14 +425,27 @@ body {
     }
     @media only screen and (max-width : 748px){
         .skills-container{
-            width: 100%;
+            width: 50%;
             margin: auto;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-gap: 80px;
             color: #fff;
         }
+        .skillheading{
+          font-size: 40px;
+        }
     }
+    @media only screen and (max-width : 450px){
+      .skills-container{
+          width: 100%;
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 60px;
+          color: #fff;
+      }
+  }
     
     .skill-card{
         position: relative;
@@ -404,6 +539,7 @@ body {
         color: brown;
     }
 
+    /* github */
     /* contact */
 
 
@@ -493,7 +629,7 @@ body {
       }
       .form-group{
         /* width: 75%; */
-        padding: 0px 46px;
+        padding: 0px 40px;
         margin: 14px 12px;
         border-radius: 25px;
         box-shadow: hwb(240 39% 56%) 0px 7px 29px 0px;
@@ -537,22 +673,61 @@ body {
             display: none;
           }
       } */
-      /* @media screen and (max-width: 356px) {
-   
+      @media screen and (max-width: 342px) {
+        #section-wrapper{
+          margin-left: -25px;
+        }
+        .gitlin{
+          /* padding-right: 10px;
+          margin-right: 10px; */
+          font-size: 30px;
+          padding-right: 25px;
+          
+        }
+        .phone2{
+          font-size: 30px;
+          padding-right: 25px;
+          
+        }
         .gmail{
-          width: 100%;
-          margin-top: 20px;
-          margin-bottom: -50px;
-          font-size: 13px;
+          font-size: 30px;
+          padding-right: 15px;
+          padding-left: 10px;
+          margin-right: 90px;
+          
+        }
+        .form-title{
+          font-size: 35px;
+        }
+        .form-fields{
+          padding: 15px;
+        }
+        #section-wrapper{
+          width: 125%;
+          margin-right: 60px;
+          font-size: 55px;
+          
         }
     }
-    @media screen and (max-width: 430px) {
-        .form-title{
-          font-size: 21px;
+    @media screen and (max-width: 440px) {
+        
+        #section-wrapper{
+          width: 105%;
+          margin-right: 10px;
+          font-size: 5px;
         }
         .gmail{
-         
-          font-size: 12px;
+          width: 100%;
+          margin: auto;
+          font-size: 37px;
+        }
+        .pm{
+          width: 100%;
+          font-size: 1px;
+        }
+        .gitlin{
+          width: 100%;
+          margin-top: 20px;
         }
         
       }
@@ -560,17 +735,15 @@ body {
         .pm{
           font-size: 14px;
         }
-    
-      } */
-      /* @media screen and (max-width: 900px) {
         .pm{
             flex-direction: column;
-            width: 70%;
+            width: 60%;
             margin: auto;
           }
           .phone2{
             width: 100%;
             margin-top: 20px;
+            font-size: 22px;
           }
           .gitlin{
             width: 100%;
@@ -580,14 +753,51 @@ body {
             width: 100%;
             margin-top: 20px;
             margin-bottom: -50px;
+            font-size: 22px;
+          }
+          .form-title{
+            margin-top: 20px;
           }
           .form-fields{
-            width: 100%;
+            width: 70%;
+            margin: auto;
+            margin-top: 50px;
            flex-direction: column;
             
           }
-      } */
+    
+      } 
+      @media screen and (max-width: 920px) {
+        .pm{
+            flex-direction: column;
+            width: 80%;
+            margin: auto;
+          }
+          
+          .form-fields{
+            width: 80%;
+           flex-direction: column;
+            
+          }
+          .heading{
+            font-size: 25px;
+          }
+          .github{
+            width: 100%;
+          }
+          .calender{
+            width: 100%;
+          }
+      }
+      .github{
+        width: 60%;margin: auto;;
+      }
+      .calender{
+        width: 60%;
+        margin: auto;
+      }
 
+      
 
 
 

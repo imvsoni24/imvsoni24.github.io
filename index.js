@@ -1,17 +1,17 @@
 
-const cursor = document.querySelector(".cursor");
-window.onmousemove = (e) => {
-  cursor.setAttribute("style", `top: ${e.pageY}px; left: ${e.pageX}px;`);
-};
+// const cursor = document.querySelector(".cursor");
+// window.onmousemove = (e) => {
+//   cursor.setAttribute("style", `top: ${e.pageY}px; left: ${e.pageX}px;`);
+// };
 
-const navToggle = document.querySelector(".navbar_toggle");
-const links = document.querySelector(".main_nav");
-const mail = document.getElementById("mail");
-const navbar = document.getElementById("navbar");
+// const navToggle = document.querySelector(".navbar_toggle");
+// const links = document.querySelector(".main_nav");
+// const mail = document.getElementById("mail");
+// const navbar = document.getElementById("navbar");
 
-navToggle.addEventListener('click', function(){
-    links.classList.toggle("show_nav");
-})
+// navToggle.addEventListener('click', function(){
+//     links.classList.toggle("show_nav");
+// })
 
 
  var typed = new Typed(".typing", {
@@ -21,12 +21,12 @@ navToggle.addEventListener('click', function(){
     loop: true
 });
 
-// var typed = new Typed(".typing-2", {
-//     strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-//     typeSpeed: 100,
-//     backSpeed: 60,
-//     loop: true
-// });
+var typed = new Typed(".typing-2", {
+    strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
 function redirect(){
     window.location.href = "https://drive.google.com/uc?id=1Is4NFOIM0cyZHtIuye69FauFuGpzn48X&export=download",
     window.open("https://drive.google.com/file/d/1Is4NFOIM0cyZHtIuye69FauFuGpzn48X/view?usp=share_link")
