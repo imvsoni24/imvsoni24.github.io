@@ -1,17 +1,15 @@
+//  const navToggle = document.querySelector(".navbar_toggle");
+//  const links = document.querySelector(".main_nav2");
 
-// const cursor = document.querySelector(".cursor");
-// window.onmousemove = (e) => {
-//   cursor.setAttribute("style", `top: ${e.pageY}px; left: ${e.pageX}px;`);
-// };
-
-// const navToggle = document.querySelector(".navbar_toggle");
-// const links = document.querySelector(".main_nav");
-// const mail = document.getElementById("mail");
-// const navbar = document.getElementById("navbar");
 
 // navToggle.addEventListener('click', function(){
 //     links.classList.toggle("show_nav");
 // })
+
+function toggleDiv() {
+  var div = document.getElementById("mainnav");
+  div.style.display = div.style.display == "none" ? "block" : "none";
+}
 
 
  var typed = new Typed(".typing", {

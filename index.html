@@ -17,18 +17,19 @@
   </head>
   <body >
 <!-- Cursor -->
-    <!-- <div >
+    <div >
         <div id="Home" class="cursor">.</div>
-    </div> -->
+    </div>
 
     <!-- navbar -->
-    <!-- <nav class="navbar" id="navbar">
-      <div class='mail' id="mail" >
-        <a onclick="email()"  href="mailto:imvsoni24@gmail.com"><i class="fa-solid fa-envelope"></i> imvsoni24@gmail.com</a>
+    <nav class="navbar" id="navbar">
+      <div style="color: white;font-size: 25px;font-style:italic;font-weight: bold;" class='mail' id="mail" >
+        Vivek Soni
       </div>
-      <div class="navbar_toggle" id="toggle">
+      <div class="navbar_toggle" id="toggle" onclick="toggleDiv()">
         <i class="fas fa-bars"></i>
       </div>
+      
       <ul  class="main_nav">
         <li>
           <a href="#Home"  class="nav_links">Home</a>
@@ -51,7 +52,27 @@
       </ul>
       
         
-    </nav> -->
+    </nav>
+    <div style="display: none;" class="mainnav2" id="mainnav">
+      <p>
+        <a href="#Home"  class="nav_links2">Home</a>
+      </p>
+      <p>
+        <a href="#Home" class="nav_links2">About</a>
+      </p>
+      <p>
+        <a href="#Skills" class="nav_links2">Skills</a>
+      </p>
+      <p >
+        <a href="#Projects" class="nav_links2">Projects</a>
+      </p>
+      <p>
+        <a href="#Contact" class="nav_links2">Contact</a>
+      </p>
+      <p>
+        <a onclick="redirect()" href="#" class="nav_links2">Resume</a>
+      </p>
+    </div>
 
      <!-- about -->
  <!-- home section start -->
@@ -197,15 +218,15 @@
 
 
 <!-- github -->
-<!-- <h1 class="heading">My Github Statistics</h1>
-<div class="github">
+<h1 class="heading1">My Github Statistics</h1>
+<div class="github" >
   <img width="100%" src="https://github-readme-stats.vercel.app/api?username=imvsoni24&show_icons=true&theme=radical" alt="">
 </div>
-<div class="github" style="width: 60%;margin: auto;margin-top: 30px;">
+<div class="github" >
   <img width="100%"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&langs_count=4&theme=radical" alt="">
 </div>
-<h1 class="heading">My Github Calender</h1>
-<div  class="calendar">
+<!-- <h1 class="heading1">My Github Calender</h1>
+<div  class="calendar " style="color:white ;width: 60%;@media only screen and (max-width : 1242px){width:100%}">
 </div> -->
 
 
@@ -272,7 +293,7 @@
 src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
 </script>
 <script>
-  GitHubCalendar(".calendar", "imvsoni24", { responsive: true });
+  GitHubCalendar(".calendar", "imvsoni24", { responsive: false });
 
   // Use a proxy
   GitHubCalendar(".calendar", "imvsoni24", {
