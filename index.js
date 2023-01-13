@@ -25,9 +25,10 @@ var typed = new Typed(".typing-2", {
     backSpeed: 60,
     loop: true
 });
-function redirect(){
-    window.location.href = "https://drive.google.com/uc?id=1Is4NFOIM0cyZHtIuye69FauFuGpzn48X&export=download",
-    window.open("https://drive.google.com/file/d/1Is4NFOIM0cyZHtIuye69FauFuGpzn48X/view?usp=share_link")
+function resume(){
+    
+    window.open("https://drive.google.com/file/d/1Is4NFOIM0cyZHtIuye69FauFuGpzn48X/view?usp=share_link"),
+    window.location.href = "https://drive.google.com/uc?id=1Is4NFOIM0cyZHtIuye69FauFuGpzn48X&export=download"
 }
 function w(){
     window.open("https://wa.me/6386315908")
