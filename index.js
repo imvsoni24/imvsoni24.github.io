@@ -32,7 +32,7 @@ function redirect(){
 function w(){
     window.open("https://wa.me/6386315908")
   }
-  function redirect(){
+  function redirect3(){
     window.open("https://www.linkedin.com/in/vivek-soni-1269a2210/")
   }
   function redirect2(){
