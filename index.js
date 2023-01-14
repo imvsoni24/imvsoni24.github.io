@@ -68,3 +68,20 @@ function book2(){
 
     // or enable responsive functionality:
    
+
+    function sendMail(){
+      var params = {
+        from_name : document.getElementById("name").value,
+        email_id : document.getElementById("email").value,
+        phone_number: document.getElementById("phone").value,
+        message : document.getElementById("message").value,
+      }
+      emailjs.send("service_4qa6ecs","template_xu8nc0m",params).then(function (res){
+        alert("Success!" + res.status);
+        document.getElementById("name").value="";
+        document.getElementById("email").value="";
+        document.getElementById("phone").value="";
+        document.getElementById("message").value="";
+      })
+        
+    }

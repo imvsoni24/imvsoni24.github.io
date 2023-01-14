@@ -12,6 +12,14 @@
 />
     <script src="https://kit.fontawesome.com/0365622707.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("PwrtpKW_YR6Kl0nNr");
+   })();
+</script>
 
    
   </head>
@@ -234,7 +242,7 @@
          <section id="section-wrapper">
             <div id="Contact" class="box-wrapper">
                 <div class="form-wrap">
-                    <form  action="#" method="POST">
+                    <!-- <form  > -->
                         <h2 class="form-title">Contact Me</h2>
                         <div class="pm">
                           <div onclick="phone()" id="phone2" class="phone2">
@@ -257,27 +265,24 @@
                         <div class="form-fields">
                            <div>
                             <div class="form-group">
-                              <input type="text" class="fname" placeholder="First Name">
+                              <input type="text" id="name" class="fname" placeholder="Full Name" required>
                           </div>
                           <div class="form-group">
-                              <input type="text" class="lname" placeholder="Last Name">
+                              <input type="email" id="email"  class="email" placeholder="Mail" required>
                           </div>
                           <div class="form-group">
-                              <input type="email"  class="email" placeholder="Mail">
-                          </div>
-                          <div class="form-group">
-                              <input type="text" class="phone" placeholder="Phone">
+                              <input type="number" id="phone" class="phone" placeholder="Phone" required>
                           </div>
                            </div>
                             <div>
                               <div  class="form-group">
-                                <textarea name="message" id="" placeholder="Write your message"></textarea>
+                                <textarea name="message" id="message" placeholder="Write your message" required></textarea>
                             </div class="form-group">
-                            <div><input style="color: rgb(97,106,115);" type="submit" value="Send Message" class="submit-button"></div>
+                            <div ><input onclick="sendMail()" style="color: rgb(97,106,115);" type="submit" value="Send Message" class="submit-button"></div>
                             </div>
                         </div>
                        
-                    </form>
+                    <!-- </form> -->
                 </div>
             </div>
         </section>
