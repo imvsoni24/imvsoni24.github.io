@@ -1,10 +1,49 @@
-//  const navToggle = document.querySelector(".navbar_toggle");
-//  const links = document.querySelector(".main_nav2");
+document.getElementById("css").style.display = "none";
+document.getElementById("js").style.display = "none";
+document.getElementById("react").style.display = "none";
+document.getElementById("redux").style.display = "none";
+document.getElementById("ts").style.display = "none";
+document.getElementById("next").style.display = "none";
+document.getElementById("chakra").style.display = "none";
+document.getElementById("hello").style.display = "none";
 
 
-// navToggle.addEventListener('click', function(){
-//     links.classList.toggle("show_nav");
-// })
+setTimeout(function(){ 
+  document.getElementById("html").style.display = "none";
+  document.getElementById("css").style.display = "block";
+}, 500);
+setTimeout(function(){ 
+  document.getElementById("css").style.display = "none";
+  document.getElementById("js").style.display = "block";
+}, 1000);
+setTimeout(function(){ 
+  document.getElementById("js").style.display = "none";
+  document.getElementById("react").style.display = "block";
+}, 1500);
+setTimeout(function(){ 
+  document.getElementById("react").style.display = "none";
+  document.getElementById("redux").style.display = "block";
+}, 2000);
+setTimeout(function(){ 
+  document.getElementById("redux").style.display = "none";
+  document.getElementById("ts").style.display = "block";
+}, 2500);
+setTimeout(function(){ 
+  document.getElementById("ts").style.display = "none";
+  document.getElementById("next").style.display = "block";
+}, 3000);
+setTimeout(function(){ 
+  document.getElementById("next").style.display = "none";
+  document.getElementById("chakra").style.display = "block";
+}, 3500);
+setTimeout(() => {
+  document.getElementById("media").style = "reset";
+}, 4000)
+setTimeout(function(){
+  document.getElementById("chakra").style.display = "none";
+  document.getElementById("hello").style.display = "block";
+}, 4000);
+
 
 function toggleDiv() {
   var div = document.getElementById("mainnav");
@@ -50,6 +89,12 @@ function w(){
   }
   function mode2(){
     window.open("https://github.com/imvsoni24/fit-base-1108")
+  }
+  function amazon1(){
+    window.open("https://apna-mart.vercel.app/")
+  }
+  function amazon2(){
+    window.open("https://github.com/atuls2060/flaky-teaching-4774")
   }
 function bebo1(){
   window.open("https://master--iridescent-gingersnap-92932a.netlify.app/index.html")

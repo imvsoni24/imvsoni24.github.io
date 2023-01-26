@@ -3,6 +3,122 @@ body {
     background: #10101a;
     background-size: 100%;
   }
+
+/* #media{
+  width: max-content;
+    height: 4rem;
+    overflow: hidden;
+    position: relative;
+} */
+
+  #html {
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #css {
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #js {
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #react {
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #redux {
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #ts {
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #next {
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #chakra {
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #hello {
+    animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
   html{
     scroll-behavior:smooth
   }
