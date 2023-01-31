@@ -37,7 +37,7 @@ setTimeout(function(){
   document.getElementById("chakra").style.display = "block";
 }, 3500);
 setTimeout(() => {
-  document.getElementById("media").style = "reset";
+  document.getElementById("media").style = "none";
 }, 4000)
 setTimeout(function(){
   document.getElementById("chakra").style.display = "none";
@@ -51,19 +51,19 @@ function toggleDiv() {
 }
 
 
- var typed = new Typed(".typing", {
-    strings: ["Full Stack Web Developer trained by Masai School."],
-    typeSpeed: 50,
-    backSpeed: 60,
-    loop: true
-});
+//  var typed = new Typed(".typing", {
+//     strings: ["Full Stack Web Developer trained by Masai School."],
+//     typeSpeed: 50,
+//     backSpeed: 60,
+//     loop: true
+// });
 
-var typed = new Typed(".typing-2", {
-    strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-});
+// var typed = new Typed(".typing-2", {
+//     strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+//     typeSpeed: 100,
+//     backSpeed: 60,
+//     loop: true
+// });
 function resume(){
     
     window.open("https://drive.google.com/file/d/1Is4NFOIM0cyZHtIuye69FauFuGpzn48X/view?usp=share_link")
