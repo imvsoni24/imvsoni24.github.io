@@ -84,7 +84,7 @@ function w(){
     window.location.href=("mailto:imvsoni24@gmail.com")
   }
   function mode1(){
-    window.open("https://becharmed.netlify.app/")
+    window.open("https://becharmed.vercel.app/");
   
   }
   function mode2(){
