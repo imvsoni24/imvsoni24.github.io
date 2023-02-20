@@ -946,16 +946,16 @@ body {
   display: none;
 }
 .github{
-  width: 60%;margin: auto;margin-top: 30px;
+  width: 50%;margin: auto;margin-top: 30px;
 }
 @media only screen and (max-width : 880px){
   .github{
-    width: 70%;
+    width: 60%;
   }
 }
 @media only screen and (max-width : 560px){
   .github{
-    width: 80%;
+    width: 70%;
   }
 }
 
