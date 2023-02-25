@@ -398,10 +398,13 @@ body {
   font-family: "D-DIN Condensed", sans-serif;
   font-size: 25px;
   letter-spacing: 0.12em;
-  color: rgb(245, 245, 245);
+  color: rgb(255, 255, 255);
   text-align: center;
   margin-top: -5px;
-  object-fit: cover;
+  padding: 10px;
+  background: black;
+    border: 0.2rem solid rgb(42, 43, 55);
+    backdrop-filter: blur(104px);
 }
 .tech2{
   writing-mode: rl-tb;
