@@ -398,9 +398,10 @@ body {
   font-family: "D-DIN Condensed", sans-serif;
   font-size: 25px;
   letter-spacing: 0.12em;
-  color: rgba(245, 245, 245, 0.755);
+  color: rgb(245, 245, 245);
   text-align: center;
   margin-top: -5px;
+  background-color: teal;
 }
 .tech2{
   writing-mode: rl-tb;
