@@ -401,7 +401,7 @@ body {
   color: rgb(245, 245, 245);
   text-align: center;
   margin-top: -5px;
-  background-color: teal;
+  object-fit: cover;
 }
 .tech2{
   writing-mode: rl-tb;
