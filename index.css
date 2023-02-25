@@ -392,17 +392,13 @@ body {
 .modeclone{
   text-align: center;font-size: 40px;margin-top: 2px;color: white;
 }
-/* .tech{
-  
-  font-size: 15px;
-  margin: auto;
-} */
+
 .tech{
   writing-mode: rl-tb;
   font-family: "D-DIN Condensed", sans-serif;
   font-size: 25px;
   letter-spacing: 0.12em;
-  color: rgb(139, 139, 139);
+  color: rgba(245, 245, 245, 0.755);
   text-align: center;
   margin-top: -5px;
 }
