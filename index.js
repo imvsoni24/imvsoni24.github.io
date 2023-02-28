@@ -103,10 +103,10 @@ function bebo2(){
   window.open("https://github.com/Harit2002/-puny-corn-6420")
 }
 function book1(){
-  window.open("https://jazzy-bienenstitch-1a091a.netlify.app/")
+  window.open("https://trendy-mart.vercel.app/");
 }
 function book2(){
-  window.open("https://github.com/imvsoni24/elastic-afterthought-7316")
+  window.open("https://github.com/UMAR44641/TrendyMart");
 }
 
 // GitHubCalendar(".calendar", "your-username");
