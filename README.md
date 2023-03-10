@@ -25,7 +25,7 @@ website link - https://imvsoni24.github.io/
 
 <h1>Tools</h1>
 
-![image](https://user-images.githubusercontent.com/112796001/220168456-3db7d23f-53e8-42e5-994d-285386c8f50a.png)
+![image](https://user-images.githubusercontent.com/112796001/224358904-684b043f-ddf3-42dd-96fc-b97f32186627.png)
 
 
 
