@@ -10,7 +10,7 @@ website link - https://imvsoni24.github.io/
 
 <h1>Home and About Section</h1> 
 
-![image](https://user-images.githubusercontent.com/112796001/220168421-7f967976-8122-4f86-ae6d-7c5375275887.png)
+![image](https://user-images.githubusercontent.com/112796001/227697260-4db0db56-0d4e-4139-8a57-90fb80a41f09.png)
 
 
 
@@ -33,7 +33,7 @@ website link - https://imvsoni24.github.io/
 <h1>Projects</h1>
 
 
-![image](https://user-images.githubusercontent.com/112796001/220168476-98b42347-2576-4213-a17b-42d889742cca.png)
+![image](https://user-images.githubusercontent.com/112796001/227697272-3ff83610-00b0-4ad0-9253-748680649ada.png)
 
 
 
