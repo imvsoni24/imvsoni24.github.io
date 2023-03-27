@@ -50,20 +50,6 @@ function toggleDiv() {
   div.style.display = div.style.display == "none" ? "block" : "none";
 }
 
-
-//  var typed = new Typed(".typing", {
-//     strings: ["Full Stack Web Developer trained by Masai School."],
-//     typeSpeed: 50,
-//     backSpeed: 60,
-//     loop: true
-// });
-
-// var typed = new Typed(".typing-2", {
-//     strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-//     typeSpeed: 100,
-//     backSpeed: 60,
-//     loop: true
-// });
 function resume(){
     
     window.open("https://drive.google.com/file/d/1Is4NFOIM0cyZHtIuye69FauFuGpzn48X/view?usp=share_link")
